@@ -1,17 +1,15 @@
 package org.xujin.crm.sales.tunnel.datatunnel.impl;
 
 import org.apache.commons.lang3.RandomUtils;
-import org.apache.ibatis.annotations.Mapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.xujin.crm.sales.dao.CustomerDOMapper;
 import org.xujin.crm.sales.tunnel.dataobject.CustomerDO;
 import org.xujin.crm.sales.tunnel.datatunnel.CustomerTunnelI;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @Component
-@Mapper
 public class CustomerDBTunnel implements CustomerTunnelI {
 
     @Autowired

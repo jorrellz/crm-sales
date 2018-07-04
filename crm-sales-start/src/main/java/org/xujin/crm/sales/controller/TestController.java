@@ -1,11 +1,10 @@
-package org.xujin.crm.sales;
+package org.xujin.crm.sales.controller;
 
 
 import com.alibaba.fastjson.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.xujin.crm.sales.api.CustomerServiceI;
@@ -19,10 +18,9 @@ import org.xujin.halo.dto.MultiResponse;
 import org.xujin.halo.dto.Response;
 
 /**
- * Created by zhujl on 2018/2/26.
+ * Created by xujin on 2018/2/26.
  */
 @RestController
-@CrossOrigin
 public class TestController {
     private Logger logger = LoggerFactory.getLogger(TestController.class);
 
