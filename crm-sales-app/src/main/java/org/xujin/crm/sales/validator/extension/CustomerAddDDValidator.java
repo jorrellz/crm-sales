@@ -21,7 +21,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 /**
  * CustomerAddDDValidator
  * 
- * @author fulan.zjf 2017-11-04
+ * @author xujin 2017-11-04
  */
 @Extension(bizCode = BizCode.DD)
 public class CustomerAddDDValidator extends ValidatorCompoiste implements CustomerAddValidatorExtPt{

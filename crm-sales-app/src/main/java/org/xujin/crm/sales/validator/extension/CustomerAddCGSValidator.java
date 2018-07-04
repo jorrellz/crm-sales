@@ -1,10 +1,3 @@
-/*
- * Copyright 2017 Alibaba.com All right reserved. This software is the
- * confidential and proprietary information of Alibaba.com ("Confidential
- * Information"). You shdemo not disclose such Confidential Information and shdemo
- * use it only in accordance with the terms of the license agreement you entered
- * into with Alibaba.com.
- */
 package org.xujin.crm.sales.validator.extension;
 
 import org.xujin.crm.sales.common.BizCode;
@@ -22,7 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 /**
  * CustomerAddCGSValidator
  * 
- * @author fulan.zjf 2017-11-04
+ * @author xujin 2017-11-04
  */
 @Extension(bizCode = BizCode.CGS)
 public class CustomerAddCGSValidator extends ValidatorCompoiste implements CustomerAddValidatorExtPt {

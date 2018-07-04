@@ -22,7 +22,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * For TDD development, Recommend use {@link AppTestsContainer} to make test agile
  * 
- * @author fulan.zjf 2017年10月27日 下午3:26:11
+ * @author xujin 2017年10月27日 下午3:26:11
  */
 @RunWith(SpringRunner.class)
 @ContextConfiguration(locations={"classpath:applicationContext.xml"}) 

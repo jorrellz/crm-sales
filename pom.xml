@@ -30,7 +30,7 @@
         <module>crm-sales-app</module>
         <module>crm-sales-domain</module>
         <module>crm-sales-infrastructure</module>
-        <module>start</module>
+        <module>crm-sales-start</module>
     </modules>
 
     <dependencyManagement>

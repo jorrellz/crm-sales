@@ -7,7 +7,7 @@ import org.springframework.context.annotation.PropertySource;
 
 /**
  * 单元测试的Spring Boot配置类
- * @author fulan.zjf
+ * @author xujin
  */
 @ImportResource(locations = {"classpath*:applicationContext-test.xml"})
 @SpringBootApplication(scanBasePackages = {"org.cliff"})

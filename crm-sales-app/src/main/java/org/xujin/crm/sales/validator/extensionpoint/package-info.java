@@ -1,6 +1,6 @@
 /**
  * Validator Extension Point are used to declare the point needs extension per different tenant.
  * 
- * @author fulan.zjf
+ * @author xujin
  */
 package org.xujin.crm.sales.validator.extensionpoint;

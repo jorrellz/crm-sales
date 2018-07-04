@@ -12,7 +12,7 @@ import org.xujin.halo.validator.ValidatorI;
 
 /**
  * CustomerAdd Validation Point
- * @author fulan.zjf 2017-11-05
+ * @author xujin 2017-11-05
  */
 public interface CustomerAddValidatorExtPt extends ValidatorI, ExtensionPointI{
 
