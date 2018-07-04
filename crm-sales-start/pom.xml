@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>start</artifactId>
     <packaging>jar</packaging>
-    <name>start</name>
+    <name>crm-sales-start</name>
 
     <dependencies>
         <dependency>
