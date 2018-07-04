@@ -10,7 +10,7 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<name>crm-sales-infrastructure</name>
 	<dependencies>
-		<!-- SOFA Framework -->
+		<!-- Halo Framework -->
 		<dependency>
 			<groupId>org.xujin.halo</groupId>
 			<artifactId>halo-core</artifactId>
@@ -51,6 +51,12 @@
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.3.0</version>
 		</dependency>
 
 		<dependency>
