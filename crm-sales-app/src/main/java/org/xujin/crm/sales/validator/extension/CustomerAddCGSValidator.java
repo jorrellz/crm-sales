@@ -36,7 +36,10 @@ public class CustomerAddCGSValidator extends ValidatorCompoiste implements Custo
         CustomerAddCmd addCustomerCmd = (CustomerAddCmd) candidate;
         //For CGS BIZ CustomerTYpe could not be VIP
         if(CustomerType.VIP == addCustomerCmd.getCustomer().getCustomerType())
+        {
             throw new BizException("VIP Customer can not be added by CGS");
+        }
+
     }
 
 }
