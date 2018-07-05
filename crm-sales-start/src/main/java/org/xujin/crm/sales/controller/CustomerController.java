@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.xujin.crm.sales.api.CustomerServiceI;
 import org.xujin.crm.sales.common.BizCode;
 import org.xujin.crm.sales.dto.CustomerAddCmd;
+import org.xujin.crm.sales.dto.CustomerCheckConflictCmd;
 import org.xujin.crm.sales.dto.CustomerFindByCriteriaQry;
 import org.xujin.crm.sales.dto.clientobject.CustomerCO;
 import org.xujin.crm.sales.dto.clientobject.CustomerType;
@@ -55,5 +56,18 @@ public class CustomerController {
         return list;
 
     }
+
+    @RequestMapping("/checkConflict")
+    public MultiResponse<CustomerCO> checkConflict(){
+        logger.info("init checkConflict");
+        TenantContext.set("10001","");
+        CustomerCheckConflictCmd customerCheckConflictCmd=new CustomerCheckConflictCmd();
+        customerCheckConflictCmd.setOperater("xujin");
+        MultiResponse<CustomerCO>  list = customerService.checkConflict(customerCheckConflictCmd);
+        return list;
+
+    }
+
+
 
 }
