@@ -6,7 +6,7 @@ import org.xujin.halo.event.EventHandler;
 import org.xujin.halo.event.EventHandlerI;
 
 /**
- * @author shawnzhan.zxy
+ * @author xujin
  * @date 2017/11/30
  */
 @EventHandler
