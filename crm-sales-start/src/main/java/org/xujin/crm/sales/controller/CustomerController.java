@@ -20,13 +20,14 @@ import org.xujin.halo.dto.Response;
  * Created by xujin on 2018/2/26.
  */
 @RestController
-public class TestController {
-    private Logger logger = LoggerFactory.getLogger(TestController.class);
+@RequestMapping("/customer")
+public class CustomerController {
+    private Logger logger = LoggerFactory.getLogger(CustomerController.class);
 
     @Autowired
     private CustomerServiceI customerService;
 
-    @RequestMapping("/test/add")
+    @RequestMapping("/add")
     public Response add(){
         logger.info("init add");
         //1.Prepare
@@ -44,7 +45,7 @@ public class TestController {
 
     }
 
-    @RequestMapping("/test/list")
+    @RequestMapping("/list")
     public MultiResponse<CustomerCO> list(){
         logger.info("init list");
         CustomerFindByCriteriaQry qry = new CustomerFindByCriteriaQry();
