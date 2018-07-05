@@ -11,11 +11,6 @@ import org.xujin.crm.sales.dto.clientobject.CustomerCO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
-/**
- * Note that HSFProvider requires Pandora Container. You can comment it out during development time.
- */
-//@HSFProvider(serviceInterface = CustomerServiceI.class)
 @Service
 public class CustomerServiceImpl implements CustomerServiceI {
 

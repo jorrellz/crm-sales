@@ -1,10 +1,3 @@
-/*
- * Copyright 2017 Alibaba.com All right reserved. This software is the
- * confidential and proprietary information of Alibaba.com ("Confidential
- * Information"). You shdemo not disclose such Confidential Information and shdemo
- * use it only in accordance with the terms of the license agreement you entered
- * into with Alibaba.com.
- */
 package org.xujin.crm.sales.validator.extension;
 
 import org.xujin.crm.sales.common.BizCode;
@@ -45,8 +38,10 @@ public class CustomerAddDDValidator extends ValidatorCompoiste implements Custom
         logger.debug("Do DingDing validation");
         CustomerAddCmd addCustomerCmd = (CustomerAddCmd) candidate;
         //For DD Biz CustomerType could not be null
-        if (addCustomerCmd.getCustomer().getCustomerType() == null)
+        if (addCustomerCmd.getCustomer().getCustomerType() == null){
             throw new ParamException("CustomerType could not be null");
+        }
+
 
     }
 
