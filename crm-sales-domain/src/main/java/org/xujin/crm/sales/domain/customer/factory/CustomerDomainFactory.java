@@ -13,6 +13,7 @@ public class CustomerDomainFactory implements DomainFactoryI<CustomerE>{
 	@Autowired
 	private ContactRepository contactRepository;
 
+	@Override
 	public CustomerE create(){
 		return new CustomerE();
 	}

@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
  *
  * @author xujin
  */
-@ComponentScan(basePackages = {"org.xujin.halo","org.xujin.crm.sales"})
+@ComponentScan(basePackages = {"org.xujin.crm.sales"})
 @MapperScan("org.xujin.crm.sales.dao")
 @SpringBootApplication
 public class CrmSalesApplication {
