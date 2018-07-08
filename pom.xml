@@ -41,9 +41,16 @@
                 <artifactId>halo-common</artifactId>
                 <version>${halo.framework.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>org.xujin.halo</groupId>
                 <artifactId>halo-core</artifactId>
+                <version>${halo.framework.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.xujin.halo</groupId>
+                <artifactId>halo-starter</artifactId>
                 <version>${halo.framework.version}</version>
             </dependency>
             <dependency>
