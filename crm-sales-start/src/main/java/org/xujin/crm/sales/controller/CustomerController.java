@@ -13,7 +13,7 @@ import org.xujin.crm.sales.dto.CustomerCheckConflictCmd;
 import org.xujin.crm.sales.dto.CustomerFindByCriteriaQry;
 import org.xujin.crm.sales.dto.clientobject.CustomerCO;
 import org.xujin.crm.sales.dto.clientobject.CustomerType;
-import org.xujin.halo.context.TenantContext;
+import org.xujin.halo.context.HaloContext;
 import org.xujin.halo.dto.MultiResponse;
 import org.xujin.halo.dto.Response;
 
@@ -32,7 +32,7 @@ public class CustomerController {
     public Response add(){
         logger.info("init add");
         //1.Prepare
-        TenantContext.set("10001", BizCode.DD);
+        HaloContext.set("10001", BizCode.DD);
         CustomerAddCmd cmd = new CustomerAddCmd();
         CustomerCO customerCO = new CustomerCO();
         customerCO.setCustomerName("jkys");
@@ -60,7 +60,7 @@ public class CustomerController {
     @RequestMapping("/checkConflict")
     public MultiResponse<CustomerCO> checkConflict(){
         logger.info("init checkConflict");
-        TenantContext.set("10001","");
+        HaloContext.set("10001","");
         CustomerCheckConflictCmd customerCheckConflictCmd=new CustomerCheckConflictCmd();
         customerCheckConflictCmd.setOperater("xujin");
         MultiResponse<CustomerCO>  list = customerService.checkConflict(customerCheckConflictCmd);

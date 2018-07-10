@@ -4,8 +4,8 @@ import org.xujin.crm.sales.common.BizCode;
 import org.xujin.crm.sales.domain.customer.entity.CustomerE;
 import org.xujin.crm.sales.domain.customer.rule.extensionpoint.CustomerRuleExtPt;
 import org.xujin.crm.sales.domain.customer.valueobject.SourceType;
+import org.xujin.halo.annotation.extension.Extension;
 import org.xujin.halo.exception.BizException;
-import org.xujin.halo.extension.Extension;
 
 /**
  * CustomerDDRuleExt

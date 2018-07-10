@@ -10,7 +10,7 @@ public class ContextInterceptor implements CommandInterceptorI{
     @Override
     public void preIntercept(Command command) {
         //Set Tenant Context here
-        //TenantContext.set("1", "CGS");
+        //HaloContext.set("1", "CGS");
     }
 
 }

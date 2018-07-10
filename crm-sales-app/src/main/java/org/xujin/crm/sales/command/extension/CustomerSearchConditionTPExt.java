@@ -1,7 +1,7 @@
 package org.xujin.crm.sales.command.extension;
 
 import org.xujin.crm.sales.common.BizCode;
-import org.xujin.halo.extension.Extension;
+import org.xujin.halo.annotation.extension.Extension;
 import org.xujin.crm.sales.command.extensionpoint.CustomerCheckConflictSearchConditionExtPt;
 
 @Extension(bizCode = BizCode.TP)

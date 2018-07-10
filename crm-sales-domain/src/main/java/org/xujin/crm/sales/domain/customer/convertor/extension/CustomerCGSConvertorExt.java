@@ -8,7 +8,7 @@ import org.xujin.crm.sales.domain.customer.convertor.extensionpoint.CustomerConv
 import org.xujin.crm.sales.domain.customer.entity.CustomerE;
 import org.xujin.crm.sales.domain.customer.valueobject.SourceType;
 import org.xujin.crm.sales.dto.clientobject.CustomerCO;
-import org.xujin.halo.extension.Extension;
+import org.xujin.halo.annotation.extension.Extension;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**

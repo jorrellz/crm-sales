@@ -2,7 +2,7 @@ package org.xujin.crm.sales.domain.customer.rule.extension;
 
 import org.xujin.crm.sales.common.BizCode;
 import org.xujin.crm.sales.domain.customer.rule.extensionpoint.CustomerRuleExtPt;
-import org.xujin.halo.extension.Extension;
+import org.xujin.halo.annotation.extension.Extension;
 import org.xujin.halo.logger.Logger;
 import org.xujin.halo.logger.LoggerFactory;
 import org.xujin.crm.sales.domain.customer.entity.CustomerE;
