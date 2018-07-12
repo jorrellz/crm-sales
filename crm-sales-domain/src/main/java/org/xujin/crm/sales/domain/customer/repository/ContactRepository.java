@@ -11,7 +11,7 @@ import java.util.Set;
 public class ContactRepository implements RepositoryI {
 
 	public Set<ContactE> queryContactByGlobalId(String globalId, String type){
-		HaloContext.getTenantId();
+		HaloContext.getExtBizCode();
 		HaloContext.getBizCode();
 		return null;
 	}

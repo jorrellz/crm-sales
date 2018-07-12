@@ -13,7 +13,7 @@ import org.xujin.halo.exception.BizException;
  * @author xujin
  * @date 2018-01-07 12:10 PM
  */
-@Extension(bizCode = BizCode.DD)
+@Extension(bizCode = BizCode.DD,extBizCode = "10001")
 public class CustomerDDRuleExt implements CustomerRuleExtPt {
 
     @Override
