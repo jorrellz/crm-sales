@@ -2,7 +2,7 @@ package org.xujin.crm.sales.validator.extension;
 
 import org.xujin.crm.sales.common.BizCode;
 import org.xujin.halo.exception.ParamException;
-import org.xujin.halo.extension.Extension;
+import org.xujin.halo.annotation.extension.Extension;
 import org.xujin.halo.logger.Logger;
 import org.xujin.halo.logger.LoggerFactory;
 import org.xujin.halo.validator.ValidatorCompoiste;

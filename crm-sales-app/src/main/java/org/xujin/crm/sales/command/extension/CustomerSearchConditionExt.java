@@ -2,7 +2,7 @@ package org.xujin.crm.sales.command.extension;
 
 import org.xujin.crm.sales.command.extensionpoint.CustomerCheckConflictSearchConditionExtPt;
 import org.xujin.crm.sales.common.BizCode;
-import org.xujin.halo.extension.Extension;
+import org.xujin.halo.annotation.extension.Extension;
 
 @Extension
 public class CustomerSearchConditionExt implements CustomerCheckConflictSearchConditionExtPt {

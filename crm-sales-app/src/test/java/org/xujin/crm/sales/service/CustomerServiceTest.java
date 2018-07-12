@@ -3,7 +3,7 @@ package org.xujin.crm.sales.service;
 import org.xujin.crm.sales.common.AppConstants;
 import org.xujin.crm.sales.common.BizCode;
 import org.xujin.crm.sales.dto.clientobject.CustomerType;
-import org.xujin.halo.context.TenantContext;
+import org.xujin.halo.context.HaloContext;
 import org.xujin.crm.sales.api.CustomerServiceI;
 import org.xujin.crm.sales.dto.CustomerAddCmd;
 import org.xujin.crm.sales.dto.clientobject.CustomerCO;
@@ -34,7 +34,7 @@ public class CustomerServiceTest {
     @Test
     public void testCustomerAddSuccess( ) {
         //1.Prepare
-    	TenantContext.set("10001", BizCode.DD);
+    	HaloContext.set("10001", BizCode.DD);
     	CustomerAddCmd cmd = new CustomerAddCmd();
     	CustomerCO customerCO = new CustomerCO();
     	customerCO.setCustomerName("xujin");
@@ -51,7 +51,7 @@ public class CustomerServiceTest {
     @Test
     public void testCustomerAddValidationFail( ) {
         //1.Prepare
-        TenantContext.set("10001", BizCode.CGS);
+        HaloContext.set("10001", BizCode.CGS);
         CustomerAddCmd cmd = new CustomerAddCmd();
         CustomerCO customerCO = new CustomerCO();
         customerCO.setCustomerName("xujin");
@@ -69,7 +69,7 @@ public class CustomerServiceTest {
     @Test
     public void testCustomerAddRuleVoilation( ){
         //1.Prepare
-        TenantContext.set("10001", BizCode.DD);
+        HaloContext.set("10001", BizCode.DD);
         CustomerAddCmd cmd = new CustomerAddCmd();
         CustomerCO customerCO = new CustomerCO();
         customerCO.setCustomerName("xujin");
