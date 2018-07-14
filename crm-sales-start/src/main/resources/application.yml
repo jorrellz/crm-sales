@@ -1,4 +1,13 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka.springcloud.cn/eureka/
+    instance:
+        prefer-ip-address: true
+
 spring:
+  application:
+      name: crm-sales-provider
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://115.159.74.109:3306/crm?useUnicode=true&characterEncoding=utf-8

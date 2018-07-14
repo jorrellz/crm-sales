@@ -23,6 +23,10 @@
         <logback.version>1.2.3</logback.version>
         <slf4j.version>1.7.22</slf4j.version>
         <halo.framework.version>1.0.4</halo.framework.version>
+
+        <spring.cloud.version>Finchley.RELEASE</spring.cloud.version>
+        <springfox-swagger2.version>2.8.0</springfox-swagger2.version>
+
     </properties>
 
     <modules>
@@ -31,6 +35,7 @@
         <module>crm-sales-domain</module>
         <module>crm-sales-infrastructure</module>
         <module>crm-sales-start</module>
+        <module>crm-sales-consumer</module>
     </modules>
 
     <dependencyManagement>
@@ -39,6 +44,12 @@
             <dependency>
                 <groupId>org.xujin.halo</groupId>
                 <artifactId>halo-common</artifactId>
+                <version>${halo.framework.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.xujin.halo</groupId>
+                <artifactId>halo-feign</artifactId>
                 <version>${halo.framework.version}</version>
             </dependency>
 
@@ -101,6 +112,21 @@
                 <version>${spring-boot.version}</version>
             </dependency>
             <!--Spring Boot End-->
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${springfox-swagger2.version}</version>
+            </dependency>
+
             <!-- Repository -->
             <dependency>
                 <groupId>mysql</groupId>
