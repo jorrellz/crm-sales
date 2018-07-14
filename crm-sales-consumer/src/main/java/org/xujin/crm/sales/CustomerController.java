@@ -1,4 +1,4 @@
-package org.xujin.crm.sales.controller;
+package org.xujin.crm.sales;
 
 import com.alibaba.fastjson.JSONObject;
 import org.slf4j.Logger;
@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.xujin.crm.sales.api.CustomerServiceI;
-import org.xujin.crm.sales.common.BizCode;
 import org.xujin.crm.sales.dto.CustomerAddCmd;
 import org.xujin.crm.sales.dto.CustomerCheckConflictCmd;
 import org.xujin.crm.sales.dto.CustomerFindByCriteriaQry;
@@ -32,7 +31,7 @@ public class CustomerController {
     public Response add(){
         logger.info("init add");
         //1.Prepare
-        HaloContext.set("10001", BizCode.DD);
+        HaloContext.set("10001", "DD");
         CustomerAddCmd cmd = new CustomerAddCmd();
         CustomerCO customerCO = new CustomerCO();
         customerCO.setCustomerName("jkys");
@@ -48,11 +47,16 @@ public class CustomerController {
 
     @RequestMapping("/list")
     public MultiResponse<CustomerCO> list(){
-        logger.info("init list");
-        CustomerFindByCriteriaQry qry = new CustomerFindByCriteriaQry();
-        MultiResponse<CustomerCO>  list = customerService.findByCriteria(qry);
-        list.getTotal();
-        logger.info(JSONObject.toJSONString(list.getData(),true));
+        MultiResponse<CustomerCO>  list = null;
+        try {
+            logger.info("init list");
+            CustomerFindByCriteriaQry qry = new CustomerFindByCriteriaQry();
+            list = customerService.findByCriteria(qry);
+            list.getTotal();
+            logger.info(JSONObject.toJSONString(list.getData(),true));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return list;
 
     }

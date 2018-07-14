@@ -3,6 +3,7 @@ package org.xujin.crm.sales;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
@@ -10,8 +11,8 @@ import org.springframework.context.annotation.ComponentScan;
  *
  * @author xujin
  */
-@ComponentScan(basePackages = {"org.xujin.crm.sales"})
 @MapperScan("org.xujin.crm.sales.dao")
+@EnableDiscoveryClient
 @SpringBootApplication
 public class CrmSalesApplication {
 

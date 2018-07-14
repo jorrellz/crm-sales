@@ -1,0 +1,12 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: crm-sales-consumer
+
+eureka:
+  client:
+    service-url:
+           defaultZone: http://eureka.springcloud.cn/eureka/
+    instance:
+        prefer-ip-address: true
