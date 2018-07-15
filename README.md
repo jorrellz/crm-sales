@@ -23,3 +23,27 @@ http://localhost:8080/customer/list
 ````
 
 主要工作是在脚手架的基础上，加入web功能和mysql连接
+
+```shell
+crm-sales-app
+│   └── src
+│       └── main
+│           └── java
+│               └── cn
+│                   └── springcloud
+│                       └── book
+│                           └── crm
+│                               └── sales
+│                                   ├── assembler //防腐层
+│                                   ├── command  // 放Command
+│                                   │   ├── extension //扩展点实现
+│                                   │   ├── extensionpoint //扩展点
+│                                   │   └── query // 放Query
+│                                   ├── event   // event事件
+│                                   │   └── handler
+│                                   ├── interceptor //基于Halo框架的Pre和Post拦截器
+│                                   ├── service
+│                                   └── validator  //校验
+│                                       ├── extension //校验扩展点实现
+│                                       └── extensionpoint //校验扩展点
+```
