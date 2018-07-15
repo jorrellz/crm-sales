@@ -71,3 +71,17 @@ crm-sales-domain
 │           │                               │   └── extensionpoint //业务规则扩展点
 │           │                               └── valueobject  //值对象
 ```
+```shell
+├── crm-sales-client
+│   └── src
+│       └── main
+│           └── java
+│               └── cn
+│                   └── springcloud
+│                       └── book
+│                           └── crm
+│                               └── sales
+│                                   ├── api  //二方包接口
+│                                   └── dto  //对应领域驱动框架中的Command对象
+│                                       └── clientobject 客户端对象CO
+```
