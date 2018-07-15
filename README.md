@@ -85,3 +85,24 @@ crm-sales-domain
 │                                   └── dto  //对应领域驱动框架中的Command对象
 │                                       └── clientobject //客户端对象CO
 ```
+```shell
+├── crm-sales-infrastructure
+│   └── src
+│       └── main
+│           ├── java
+│           │   └── cn
+│           │       └── springcloud
+│           │           └── book
+│           │               └── crm
+│           │                   └── sales
+│           │                       ├── common
+│           │                       ├── config  //Halo框架等Spring Boot的java配置类
+│           │                       ├── dao     //数据接口访问层
+│           │                       └── tunnel  //数据通道层
+│           │                           ├── dataobject //数据对象DO
+│           │                           └── datatunnel //数据通道接口层
+│           │                               └── impl   //数据通道接口对应的实现
+│           └── resources
+│               └── mapper // MyBitas的Mapper文件
+```
+
