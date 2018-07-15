@@ -47,3 +47,27 @@ crm-sales-app
 │                                       ├── extension //校验扩展点实现
 │                                       └── extensionpoint //校验扩展点
 ```
+
+```shell
+crm-sales-domain
+│   └── src
+│       └── main
+│           ├── java
+│           │   └── cn
+│           │       └── springcloud
+│           │           └── book
+│           │               └── crm
+│           │                   └── sales
+│           │                       └── domain
+│           │                           └── customer
+│           │                               ├── convertor //转换器
+│           │                               │   ├── extension  //扩展点实现
+│           │                               │   └── extensionpoint //扩展点
+│           │                               ├── entity  //领域聚合
+│           │                               ├── factory //创建领域实体的工厂
+│           │                               ├── repository //持久化领域对象和Tunnel层交互
+│           │                               ├── rule  //业务规则
+│           │                               │   ├── extension // 业务规则扩展点实现
+│           │                               │   └── extensionpoint //业务规则扩展点
+│           │                               └── valueobject  //值对象
+```
