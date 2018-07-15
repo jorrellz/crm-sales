@@ -83,5 +83,5 @@ crm-sales-domain
 │                               └── sales
 │                                   ├── api  //二方包接口
 │                                   └── dto  //对应领域驱动框架中的Command对象
-│                                       └── clientobject 客户端对象CO
+│                                       └── clientobject //客户端对象CO
 ```
